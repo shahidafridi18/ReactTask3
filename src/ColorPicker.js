@@ -31,7 +31,7 @@ const ColorPicker = () => {
 
   return (
     <div>
-      <h1 style={{fontSize:"40px"}}>Color Picker</h1>
+      <h1 style={{fontSize:"35px"}}>Color Picker</h1>
 
       <div
         className="color-picker p-4 m-2 rounded-lg py-24"
@@ -39,12 +39,7 @@ const ColorPicker = () => {
           backgroundColor: bgColor,
         }}
       >
-        <button
-          onClick={handlePickColor}
-          className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
-        >
-          Pick Color
-        </button>
+        
         <div className="color-blocks mt-4 flex">
           {colors.map((color, index) => (
             <div
@@ -60,7 +55,14 @@ const ColorPicker = () => {
             ></div>
           ))}
         </div>
+        <button
+          onClick={handlePickColor}
+          className="bg-green-500 text-white px-4 py-2  hover:bg-blue-600"
+        >
+          Pick a Color
+        </button>
       </div>
+      
     </div>
   );
 };
